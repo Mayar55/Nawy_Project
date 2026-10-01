@@ -1,0 +1,124 @@
+[0m23:57:14.995224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4120B2120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40FC50B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D414A1F890>]}
+
+
+============================== 23:57:15.007242 | 5dc0c7b3-c6c7-4079-904b-1c3730a08368 ==============================
+[0m23:57:15.007242 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:57:15.008100 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Mega Store\\.dbt', 'invocation_command': 'dbt init my_data_pipeline', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m23:57:15.069497 [debug] [MainThread]: Starter project path: C:\Users\Mega Store\Documents\Projects\project\my-env\Lib\site-packages\dbt\include\starter_project
+[0m23:57:15.083066 [info ] [MainThread]: Setting up your profile.
+[0m00:00:05.758819 [info ] [MainThread]: Profile my_data_pipeline written to C:\Users\Mega Store\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m00:00:05.765897 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m00:00:05.766476 [info ] [MainThread]: dbt version: 1.12.5
+[0m00:00:05.766913 [info ] [MainThread]: python version: 3.14.7
+[0m00:00:05.767311 [info ] [MainThread]: python path: C:\Users\Mega Store\Documents\Projects\project\my-env\Scripts\python.exe
+[0m00:00:05.767635 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m00:00:05.799971 [info ] [MainThread]: Using profiles dir at C:\Users\Mega Store\.dbt
+[0m00:00:05.800652 [info ] [MainThread]: Using profiles.yml file at C:\Users\Mega Store\.dbt\profiles.yml
+[0m00:00:05.801206 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Mega Store\Documents\Projects\project\my_data_pipeline\dbt_project.yml
+[0m00:00:05.803015 [info ] [MainThread]: adapter type: postgres
+[0m00:00:05.803587 [info ] [MainThread]: adapter version: 1.11.0
+[0m00:00:05.924857 [info ] [MainThread]: Configuration:
+[0m00:00:05.925358 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:00:05.925800 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:00:05.926235 [info ] [MainThread]: Required dependencies:
+[0m00:00:05.926661 [debug] [MainThread]: Executing "git --help"
+[0m00:00:05.971275 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:00:05.971709 [debug] [MainThread]: STDERR: "b''"
+[0m00:00:05.972036 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:00:05.972455 [info ] [MainThread]: Connection:
+[0m00:00:05.972864 [info ] [MainThread]:   host: localhost
+[0m00:00:05.973256 [info ] [MainThread]:   port: 5432
+[0m00:00:05.973650 [info ] [MainThread]:   user: posgtres
+[0m00:00:05.974060 [info ] [MainThread]:   database: dwh
+[0m00:00:05.974478 [info ] [MainThread]:   schema: dwh
+[0m00:00:05.974894 [info ] [MainThread]:   connect_timeout: 10
+[0m00:00:05.975308 [info ] [MainThread]:   role: None
+[0m00:00:05.975706 [info ] [MainThread]:   search_path: None
+[0m00:00:05.976123 [info ] [MainThread]:   keepalives_idle: 0
+[0m00:00:05.976538 [info ] [MainThread]:   sslmode: None
+[0m00:00:05.976955 [info ] [MainThread]:   sslcert: None
+[0m00:00:05.977595 [info ] [MainThread]:   sslkey: None
+[0m00:00:05.978076 [info ] [MainThread]:   sslrootcert: None
+[0m00:00:05.980243 [info ] [MainThread]:   application_name: dbt
+[0m00:00:05.980667 [info ] [MainThread]:   autocommit: False
+[0m00:00:05.981016 [info ] [MainThread]:   retries: 1
+[0m00:00:05.981593 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m00:00:06.249382 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m00:00:06.325742 [debug] [MainThread]: Using postgres connection "debug"
+[0m00:00:06.326049 [debug] [MainThread]: On debug: select 1 as id
+[0m00:00:06.326290 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:00:06.370331 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "posgtres"
+
+[0m00:00:06.401050 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m00:00:06.401498 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m00:00:06.401791 [debug] [MainThread]: On debug: No close available on handle
+[0m00:00:06.402062 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:00:06.402727 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:00:06.403298 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "posgtres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:00:06.403690 [info ] [MainThread]: Your new dbt project "my_data_pipeline" was created!
+Initialized new project in C:\Users\Mega Store\Documents\Projects\project\my_data_pipeline\my_data_pipeline
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:00:06.404081 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m00:00:06.404950 [debug] [MainThread]: Command `dbt init` succeeded at 00:00:06.404853 after 171.63 seconds
+[0m00:00:06.405219 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m00:00:06.405498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D41485A9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D414D4F770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4149DC160>]}
+[0m00:00:06.405824 [debug] [MainThread]: Flushing usage events
+[0m00:00:07.205007 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:33:17.302178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350B1D2120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023508D70B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350DBA7890>]}
+
+
+============================== 23:33:17.306292 | a6ba5aa5-6570-4ccf-9df7-f3c06f0439d9 ==============================
+[0m23:33:17.306292 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:33:17.306955 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Mega Store\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select dim_location', 'log_path': 'logs'}
+[0m23:33:17.307479 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Mega Store\Documents\Projects\project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:33:17.308421 [debug] [MainThread]: Command `dbt run` failed at 23:33:17.308308 after 0.20 seconds
+[0m23:33:17.308765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350DC28770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350DC34290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002350DBDD9D0>]}
+[0m23:33:17.309157 [debug] [MainThread]: Flushing usage events
+[0m23:33:18.130442 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:05:25.307562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB48FE2120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB46B70B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4B9B7890>]}
+
+
+============================== 11:05:25.323321 | 29b534e4-2026-48de-91d7-f49565296906 ==============================
+[0m11:05:25.323321 [info ] [MainThread]: Running with dbt=1.12.5
+[0m11:05:25.324357 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Mega Store\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m11:05:25.325176 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Mega Store\Documents\Projects\project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:05:25.326772 [debug] [MainThread]: Command `dbt run` failed at 11:05:25.326586 after 0.38 seconds
+[0m11:05:25.327342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BA38770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4BA58290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB4B9ED9D0>]}
+[0m11:05:25.327921 [debug] [MainThread]: Flushing usage events
+[0m11:05:26.375121 [debug] [MainThread]: An error was encountered while trying to flush usage events

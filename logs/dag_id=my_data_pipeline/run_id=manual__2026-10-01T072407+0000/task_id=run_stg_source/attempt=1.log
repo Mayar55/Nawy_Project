@@ -1,0 +1,36 @@
+[2026-10-01T07:29:08.411+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-01T07:29:08.441+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_data_pipeline.run_stg_source manual__2026-10-01T07:24:07+00:00 [queued]>
+[2026-10-01T07:29:08.453+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_data_pipeline.run_stg_source manual__2026-10-01T07:24:07+00:00 [queued]>
+[2026-10-01T07:29:08.455+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-10-01T07:29:08.471+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): run_stg_source> on 2026-10-01 07:24:07+00:00
+[2026-10-01T07:29:08.479+0000] {standard_task_runner.py:72} INFO - Started process 853 to run task
+[2026-10-01T07:29:08.485+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'my_data_pipeline', 'run_stg_source', 'manual__2026-10-01T07:24:07+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/dbt_pipeline.py', '--cfg-path', '/tmp/tmpn6hcf3_p']
+[2026-10-01T07:29:08.491+0000] {standard_task_runner.py:105} INFO - Job 21: Subtask run_stg_source
+[2026-10-01T07:29:08.586+0000] {task_command.py:467} INFO - Running <TaskInstance: my_data_pipeline.run_stg_source manual__2026-10-01T07:24:07+00:00 [running]> on host e946b1b4274d
+[2026-10-01T07:29:08.731+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_data_pipeline' AIRFLOW_CTX_TASK_ID='run_stg_source' AIRFLOW_CTX_EXECUTION_DATE='2026-10-01T07:24:07+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-01T07:24:07+00:00'
+[2026-10-01T07:29:08.734+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-10-01T07:29:08.750+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-10-01T07:29:08.752+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd "/opt/***/my_data_pipeline" && dbt run --select path:models/stg_source --profiles-dir "/opt/***/my_data_pipeline"']
+[2026-10-01T07:29:08.769+0000] {subprocess.py:99} INFO - Output:
+[2026-10-01T07:29:11.620+0000] {subprocess.py:106} INFO - [0m07:29:11  Running with dbt=1.7.19
+[2026-10-01T07:29:11.872+0000] {subprocess.py:106} INFO - [0m07:29:11  Registered adapter: postgres=1.7.19
+[2026-10-01T07:29:12.582+0000] {subprocess.py:106} INFO - [0m07:29:12  Found 14 models, 5 tests, 2 seeds, 0 sources, 0 exposures, 0 metrics, 402 macros, 0 groups, 0 semantic models
+[2026-10-01T07:29:12.592+0000] {subprocess.py:106} INFO - [0m07:29:12
+[2026-10-01T07:29:13.082+0000] {subprocess.py:106} INFO - [0m07:29:13  Concurrency: 4 threads (target='dev')
+[2026-10-01T07:29:13.086+0000] {subprocess.py:106} INFO - [0m07:29:13
+[2026-10-01T07:29:13.104+0000] {subprocess.py:106} INFO - [0m07:29:13  1 of 2 START sql table model stg_schema.stg_leads .............................. [RUN]
+[2026-10-01T07:29:13.105+0000] {subprocess.py:106} INFO - [0m07:29:13  2 of 2 START sql table model stg_schema.stg_sales .............................. [RUN]
+[2026-10-01T07:29:13.471+0000] {subprocess.py:106} INFO - [0m07:29:13  2 of 2 OK created sql table model stg_schema.stg_sales ......................... [[32mSELECT 1567[0m in 0.35s]
+[2026-10-01T07:29:13.577+0000] {subprocess.py:106} INFO - [0m07:29:13  1 of 2 OK created sql table model stg_schema.stg_leads ......................... [[32mSELECT 55924[0m in 0.46s]
+[2026-10-01T07:29:13.727+0000] {subprocess.py:106} INFO - [0m07:29:13
+[2026-10-01T07:29:13.730+0000] {subprocess.py:106} INFO - [0m07:29:13  Finished running 2 table models in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[2026-10-01T07:29:13.757+0000] {subprocess.py:106} INFO - [0m07:29:13
+[2026-10-01T07:29:13.759+0000] {subprocess.py:106} INFO - [0m07:29:13  [32mCompleted successfully[0m
+[2026-10-01T07:29:13.762+0000] {subprocess.py:106} INFO - [0m07:29:13
+[2026-10-01T07:29:13.765+0000] {subprocess.py:106} INFO - [0m07:29:13  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2026-10-01T07:29:14.856+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-10-01T07:29:14.906+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-10-01T07:29:14.908+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=my_data_pipeline, task_id=run_stg_source, run_id=manual__2026-10-01T07:24:07+00:00, execution_date=20261001T072407, start_date=20261001T072908, end_date=20261001T072914
+[2026-10-01T07:29:14.984+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-01T07:29:15.020+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-01T07:29:15.024+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

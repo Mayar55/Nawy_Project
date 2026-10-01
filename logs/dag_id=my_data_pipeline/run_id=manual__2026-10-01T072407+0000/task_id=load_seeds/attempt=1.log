@@ -1,0 +1,36 @@
+[2026-10-01T07:24:16.141+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-01T07:24:16.168+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_data_pipeline.load_seeds manual__2026-10-01T07:24:07+00:00 [queued]>
+[2026-10-01T07:24:16.177+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_data_pipeline.load_seeds manual__2026-10-01T07:24:07+00:00 [queued]>
+[2026-10-01T07:24:16.179+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-10-01T07:24:16.190+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): load_seeds> on 2026-10-01 07:24:07+00:00
+[2026-10-01T07:24:16.195+0000] {standard_task_runner.py:72} INFO - Started process 760 to run task
+[2026-10-01T07:24:16.198+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'my_data_pipeline', 'load_seeds', 'manual__2026-10-01T07:24:07+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/dbt_pipeline.py', '--cfg-path', '/tmp/tmpnl6qc4pe']
+[2026-10-01T07:24:16.202+0000] {standard_task_runner.py:105} INFO - Job 20: Subtask load_seeds
+[2026-10-01T07:24:16.259+0000] {task_command.py:467} INFO - Running <TaskInstance: my_data_pipeline.load_seeds manual__2026-10-01T07:24:07+00:00 [running]> on host e946b1b4274d
+[2026-10-01T07:24:16.348+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_data_pipeline' AIRFLOW_CTX_TASK_ID='load_seeds' AIRFLOW_CTX_EXECUTION_DATE='2026-10-01T07:24:07+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-01T07:24:07+00:00'
+[2026-10-01T07:24:16.350+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-10-01T07:24:16.362+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-10-01T07:24:16.364+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd "/opt/***/my_data_pipeline" && dbt seed --profiles-dir "/opt/***/my_data_pipeline"']
+[2026-10-01T07:24:16.374+0000] {subprocess.py:99} INFO - Output:
+[2026-10-01T07:24:18.649+0000] {subprocess.py:106} INFO - [0m07:24:18  Running with dbt=1.7.19
+[2026-10-01T07:24:18.874+0000] {subprocess.py:106} INFO - [0m07:24:18  Registered adapter: postgres=1.7.19
+[2026-10-01T07:24:20.429+0000] {subprocess.py:106} INFO - [0m07:24:20  Found 14 models, 5 tests, 2 seeds, 0 sources, 0 exposures, 0 metrics, 402 macros, 0 groups, 0 semantic models
+[2026-10-01T07:24:20.437+0000] {subprocess.py:106} INFO - [0m07:24:20
+[2026-10-01T07:24:20.865+0000] {subprocess.py:106} INFO - [0m07:24:20  Concurrency: 4 threads (target='dev')
+[2026-10-01T07:24:20.867+0000] {subprocess.py:106} INFO - [0m07:24:20
+[2026-10-01T07:24:20.880+0000] {subprocess.py:106} INFO - [0m07:24:20  1 of 2 START seed file data_source.source_leads ................................ [RUN]
+[2026-10-01T07:24:20.883+0000] {subprocess.py:106} INFO - [0m07:24:20  2 of 2 START seed file data_source.source_sales ................................ [RUN]
+[2026-10-01T07:24:30.524+0000] {subprocess.py:106} INFO - [0m07:24:30  2 of 2 OK loaded seed file data_source.source_sales ............................ [[32mINSERT 1567[0m in 9.62s]
+[2026-10-01T07:29:05.737+0000] {subprocess.py:106} INFO - [0m07:29:05  1 of 2 OK loaded seed file data_source.source_leads ............................ [[32mINSERT 55924[0m in 284.85s]
+[2026-10-01T07:29:05.835+0000] {subprocess.py:106} INFO - [0m07:29:05
+[2026-10-01T07:29:05.836+0000] {subprocess.py:106} INFO - [0m07:29:05  Finished running 2 seeds in 0 hours 4 minutes and 45.40 seconds (285.40s).
+[2026-10-01T07:29:05.877+0000] {subprocess.py:106} INFO - [0m07:29:05
+[2026-10-01T07:29:05.880+0000] {subprocess.py:106} INFO - [0m07:29:05  [32mCompleted successfully[0m
+[2026-10-01T07:29:05.883+0000] {subprocess.py:106} INFO - [0m07:29:05
+[2026-10-01T07:29:05.886+0000] {subprocess.py:106} INFO - [0m07:29:05  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2026-10-01T07:29:07.244+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-10-01T07:29:07.283+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-10-01T07:29:07.286+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=my_data_pipeline, task_id=load_seeds, run_id=manual__2026-10-01T07:24:07+00:00, execution_date=20261001T072407, start_date=20261001T072416, end_date=20261001T072907
+[2026-10-01T07:29:07.349+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-01T07:29:07.383+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-01T07:29:07.387+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

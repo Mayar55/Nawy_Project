@@ -1,0 +1,282 @@
+==================== 2026-10-01T07:41:22.123087Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-01T07:41:22.132714Z | a0f53964-44e5-46e1-9d77-81e4263cde53 ====================
+07:41:22.133933 [info ]: Starting dbt LSP server
+07:41:22.135437 [info ]: Connecting to LSP client on port 8000
+07:41:22.145247 [info ]: Successfully connected to LSP client
+07:41:22.145725 [info ]: Creating LSP service...
+07:41:22.159394 [info ]: Creating LSP server...
+07:41:22.159440 [info ]: Starting LSP server...
+07:41:22.245001 [info ]: Loading profiles.yml
+07:41:22.271164 [info ]: Loading profiles.yml
+07:53:30.224676 [info ]: Loading profiles.yml
+07:53:35.681616 [info ]: Loading profiles.yml
+07:53:40.523476 [info ]: Loading profiles.yml
+07:53:43.821624 [info ]: Loading profiles.yml
+07:59:46.116290 [info ]: Loading profiles.yml
+07:59:55.160810 [info ]: Loading profiles.yml
+08:00:03.108045 [info ]: Loading profiles.yml
+08:00:07.136224 [info ]: Loading profiles.yml
+08:00:09.120250 [info ]: Loading profiles.yml
+08:00:20.697198 [debug]: Ignoring unsupported LSP notification
+08:00:21.421226 [debug]: Ignoring unsupported LSP notification
+08:00:23.908710 [info ]: Loading profiles.yml
+08:00:29.812580 [info ]: Loading profiles.yml
+08:00:34.322503 [info ]: Loading profiles.yml
+08:00:52.033841 [debug]: Ignoring unsupported LSP notification
+08:00:57.692424 [debug]: Ignoring unsupported LSP notification
+08:01:28.770870 [debug]: Ignoring unsupported LSP notification
+08:01:39.859809 [info ]: Loading profiles.yml
+08:01:48.003427 [info ]: Loading profiles.yml
+08:01:51.216034 [info ]: Loading profiles.yml
+08:01:53.861229 [info ]: Loading profiles.yml
+08:02:30.957174 [info ]: Loading profiles.yml
+==================== 2026-10-01T08:02:33.994497Z | 7267d101-14e3-4b77-b0d4-c468a9ae7582 ====================
+08:02:33.997471 [info ]: Started loading project
+08:02:34.010400 [info ]: Loading profiles.yml
+08:02:34.015736 [info ]: Finished loading project [  0.02s]
+08:02:34.016193 [error]: [InvalidConfig (dbt1005)]: Configuration Error: The 'postgres' adapter is not yet supported by dbt. Supported adapters: snowflake, bigquery, databricks, redshift, duckdb, salesforce, clickhouse. To use an experimental adapter, set the environment variable DBT_ALLOW_EXPERIMENTAL_ADAPTERS=true. Note that experimental adapters may be unstable and are not yet recommended for production use.
+08:02:34.018443 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [23ms]
+08:02:41.777046 [debug]: Ignoring unsupported LSP notification
+08:02:50.234495 [info ]: Loading profiles.yml
+08:02:52.983764 [info ]: Loading profiles.yml
+08:03:03.035126 [info ]: Loading profiles.yml
+08:03:13.844529 [info ]: Loading profiles.yml
+08:03:15.181249 [info ]: Loading profiles.yml
+08:03:17.358633 [info ]: Loading profiles.yml
+08:03:19.495258 [info ]: Loading profiles.yml
+08:04:54.686131 [info ]: Loading profiles.yml
+==================== 2026-10-01T08:05:13.032945Z | aded64be-3cb3-43a7-bd46-7d89dba13e1a ====================
+08:05:13.033243 [info ]: Started loading project
+08:05:13.034719 [info ]: Loading profiles.yml
+08:05:13.035720 [error]: [InvalidConfig (dbt1005)]: Configuration Error: The 'postgres' adapter is not yet supported by dbt. Supported adapters: snowflake, bigquery, databricks, redshift, duckdb, salesforce, clickhouse. To use an experimental adapter, set the environment variable DBT_ALLOW_EXPERIMENTAL_ADAPTERS=true. Note that experimental adapters may be unstable and are not yet recommended for production use.
+08:05:13.035765 [info ]: Finished loading project [  0.00s]
+08:05:13.035823 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [2ms]
+08:05:40.835557 [info ]: Loading profiles.yml
+08:05:41.372579 [info ]: Loading profiles.yml
+08:05:41.737206 [info ]: Loading profiles.yml
+08:05:43.332352 [info ]: Loading profiles.yml
+08:05:43.957589 [info ]: Loading profiles.yml
+08:05:58.005476 [info ]: Loading profiles.yml
+08:05:58.010076 [info ]: Loading profiles.yml
+08:05:58.014541 [info ]: Loading profiles.yml
+08:06:06.634261 [info ]: Loading profiles.yml
+08:06:08.935104 [info ]: Loading profiles.yml
+08:06:12.206447 [info ]: Loading profiles.yml
+08:06:20.684994 [info ]: Loading profiles.yml
+08:06:21.399124 [info ]: Loading profiles.yml
+08:06:21.764775 [info ]: Loading profiles.yml
+08:06:23.529664 [info ]: Loading profiles.yml
+08:06:23.812764 [info ]: Loading profiles.yml
+08:06:24.238511 [info ]: Loading profiles.yml
+08:06:34.227560 [info ]: Loading profiles.yml
+08:06:34.950955 [info ]: Loading profiles.yml
+08:06:36.470289 [info ]: Loading profiles.yml
+08:06:37.094623 [info ]: Loading profiles.yml
+08:07:14.610808 [info ]: Loading profiles.yml
+08:07:14.645139 [info ]: Loading profiles.yml
+08:07:14.690558 [info ]: Loading profiles.yml
+08:07:23.882912 [info ]: Loading profiles.yml
+08:10:24.944053 [info ]: Loading profiles.yml
+08:10:41.959332 [info ]: Loading profiles.yml
+08:10:43.068710 [info ]: Loading profiles.yml
+08:10:53.735070 [info ]: Loading profiles.yml
+08:18:16.124431 [info ]: Loading profiles.yml
+08:18:46.541283 [info ]: Loading profiles.yml
+08:19:17.787129 [debug]: Ignoring unsupported LSP notification
+08:19:21.564304 [debug]: Ignoring unsupported LSP notification
+08:24:34.103700 [info ]: Loading profiles.yml
+08:28:01.253199 [info ]: Loading profiles.yml
+08:28:01.581037 [info ]: Loading profiles.yml
+08:28:05.823327 [info ]: Loading profiles.yml
+08:28:05.899899 [info ]: Loading profiles.yml
+08:28:05.904338 [info ]: Loading profiles.yml
+08:28:06.380374 [info ]: Loading profiles.yml
+08:28:13.040036 [info ]: Loading profiles.yml
+08:28:17.947697 [info ]: Loading profiles.yml
+08:28:17.953321 [info ]: Loading profiles.yml
+08:28:17.958848 [info ]: Loading profiles.yml
+08:28:17.983865 [info ]: Loading profiles.yml
+08:28:18.072086 [info ]: Loading profiles.yml
+08:33:37.885407 [info ]: Loading profiles.yml
+08:33:42.212490 [info ]: Loading profiles.yml
+08:33:43.358210 [info ]: Loading profiles.yml
+08:33:47.826268 [info ]: Loading profiles.yml
+08:33:47.898127 [info ]: Loading profiles.yml
+==================== 2026-10-01T08:42:25.594456Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-01T08:42:25.595023Z | 084cc927-7b67-4462-a43e-2848cbd6ec12 ====================
+08:42:25.595067 [info ]: Starting dbt LSP server
+08:42:25.595135 [info ]: Connecting to LSP client on port 8000
+08:42:25.599377 [info ]: Successfully connected to LSP client
+08:42:25.599444 [info ]: Creating LSP service...
+08:42:25.602692 [info ]: Creating LSP server...
+08:42:25.602730 [info ]: Starting LSP server...
+08:42:30.309822 [info ]: Loading profiles.yml
+08:42:31.180588 [info ]: Loading profiles.yml
+08:43:13.978903 [info ]: Loading profiles.yml
+08:43:14.574978 [info ]: Loading profiles.yml
+08:43:20.394795 [info ]: Loading profiles.yml
+08:43:27.659216 [info ]: Loading profiles.yml
+08:43:56.138713 [info ]: Loading profiles.yml
+08:43:56.552397 [info ]: Loading profiles.yml
+08:44:16.395222 [info ]: Loading profiles.yml
+08:44:23.009451 [info ]: Loading profiles.yml
+08:44:23.289209 [info ]: Loading profiles.yml
+08:44:24.970450 [info ]: Loading profiles.yml
+08:46:02.153024 [info ]: Loading profiles.yml
+08:46:03.067359 [info ]: Loading profiles.yml
+08:46:07.732081 [info ]: Loading profiles.yml
+08:48:38.132915 [info ]: Loading profiles.yml
+08:50:06.663079 [info ]: Loading profiles.yml
+08:50:10.442793 [info ]: Loading profiles.yml
+08:51:06.360533 [info ]: Loading profiles.yml
+08:51:24.067141 [info ]: Loading profiles.yml
+==================== 2026-10-01T08:51:27.496410Z | 42d6b602-4598-4e9d-ac0c-fdaad9fd1ac7 ====================
+08:51:27.496593 [info ]: Started loading project
+08:51:27.498907 [info ]: Loading ~/.dbt/profiles.yml
+08:51:27.499483 [error]: [InvalidConfig (dbt1005)]: Configuration Error: The 'postgres' adapter is not yet supported by dbt. Supported adapters: snowflake, bigquery, databricks, redshift, duckdb, salesforce, clickhouse. To use an experimental adapter, set the environment variable DBT_ALLOW_EXPERIMENTAL_ADAPTERS=true. Note that experimental adapters may be unstable and are not yet recommended for production use.
+08:51:27.499545 [info ]: Finished loading project [  0.00s]
+08:51:27.499604 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error [3ms]
+08:51:59.488460 [info ]: Loading ~/.dbt/profiles.yml
+08:52:00.150175 [info ]: Loading ~/.dbt/profiles.yml
+08:52:18.520770 [info ]: Loading ~/.dbt/profiles.yml
+08:52:19.069813 [info ]: Loading ~/.dbt/profiles.yml
+08:52:37.988433 [info ]: Loading ~/.dbt/profiles.yml
+08:52:49.857791 [info ]: Loading ~/.dbt/profiles.yml
+08:53:36.516231 [info ]: Loading ~/.dbt/profiles.yml
+08:54:48.885778 [info ]: Loading ~/.dbt/profiles.yml
+08:55:20.344169 [info ]: Loading ~/.dbt/profiles.yml
+08:55:36.994667 [info ]: Loading ~/.dbt/profiles.yml
+08:58:22.204088 [info ]: Loading ~/.dbt/profiles.yml
+08:58:37.339650 [info ]: Loading ~/.dbt/profiles.yml
+08:59:39.898584 [debug]: Ignoring unsupported LSP notification
+08:59:48.715302 [info ]: Loading ~/.dbt/profiles.yml
+08:59:54.132926 [debug]: Ignoring unsupported LSP notification
+09:01:26.959686 [info ]: Loading ~/.dbt/profiles.yml
+09:01:38.352174 [info ]: Loading ~/.dbt/profiles.yml
+09:02:19.999504 [info ]: Loading ~/.dbt/profiles.yml
+09:02:35.666251 [info ]: Loading ~/.dbt/profiles.yml
+09:03:57.500198 [info ]: Loading ~/.dbt/profiles.yml
+09:08:02.928443 [info ]: Loading ~/.dbt/profiles.yml
+09:08:10.275282 [info ]: Loading ~/.dbt/profiles.yml
+09:08:17.770413 [info ]: Loading ~/.dbt/profiles.yml
+09:08:18.092741 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-10-01T09:18:32.302593Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-01T09:18:32.303058Z | ed8bb6be-969c-4a7c-82e9-c112e3ec8407 ====================
+09:18:32.303398 [info ]: Starting dbt LSP server
+09:18:32.303431 [info ]: Connecting to LSP client on port 8000
+09:18:32.308750 [info ]: Successfully connected to LSP client
+09:18:32.308820 [info ]: Creating LSP service...
+09:18:32.311914 [info ]: Creating LSP server...
+09:18:32.312029 [info ]: Starting LSP server...
+09:18:57.256518 [debug]: Ignoring unsupported LSP notification
+09:18:58.864230 [info ]: Loading ~/.dbt/profiles.yml
+09:19:05.362257 [info ]: Loading ~/.dbt/profiles.yml
+09:19:09.101034 [info ]: Loading ~/.dbt/profiles.yml
+09:19:11.542790 [info ]: Loading ~/.dbt/profiles.yml
+09:19:29.357345 [info ]: Loading ~/.dbt/profiles.yml
+09:20:02.912755 [info ]: Loading ~/.dbt/profiles.yml
+09:21:00.569318 [debug]: Ignoring unsupported LSP notification
+09:21:01.585369 [debug]: Ignoring unsupported LSP notification
+09:21:27.795386 [debug]: Ignoring unsupported LSP notification
+09:21:28.843469 [debug]: Ignoring unsupported LSP notification
+09:21:41.955415 [info ]: Loading ~/.dbt/profiles.yml
+09:23:32.976533 [info ]: Loading ~/.dbt/profiles.yml
+09:24:51.753755 [info ]: Loading ~/.dbt/profiles.yml
+09:24:53.264051 [info ]: Loading ~/.dbt/profiles.yml
+09:25:05.806187 [info ]: Loading ~/.dbt/profiles.yml
+09:25:08.964199 [info ]: Loading ~/.dbt/profiles.yml
+09:25:10.032020 [info ]: Loading ~/.dbt/profiles.yml
+09:25:11.042536 [info ]: Loading ~/.dbt/profiles.yml
+09:26:55.887706 [info ]: Loading ~/.dbt/profiles.yml
+09:26:56.679996 [info ]: Loading ~/.dbt/profiles.yml
+09:26:57.362318 [info ]: Loading ~/.dbt/profiles.yml
+09:27:01.938748 [debug]: Ignoring unsupported LSP notification
+09:27:06.679297 [info ]: Loading ~/.dbt/profiles.yml
+09:27:07.698560 [info ]: Loading ~/.dbt/profiles.yml
+09:27:09.815340 [info ]: Loading ~/.dbt/profiles.yml
+09:27:10.215930 [info ]: Loading ~/.dbt/profiles.yml
+09:27:10.863659 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-10-01T09:30:30.622111Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-10-01T09:30:30.622545Z | 836de576-f0eb-4da8-a4cf-868c176b1a17 ====================
+09:30:30.622817 [info ]: Starting dbt LSP server
+09:30:30.622850 [info ]: Connecting to LSP client on port 8000
+09:30:30.625418 [info ]: Successfully connected to LSP client
+09:30:30.625446 [info ]: Creating LSP service...
+09:30:30.627483 [info ]: Creating LSP server...
+09:30:30.627499 [info ]: Starting LSP server...
+09:30:55.338194 [info ]: Loading ~/.dbt/profiles.yml
+09:31:13.980438 [info ]: Loading ~/.dbt/profiles.yml
+09:31:21.204862 [info ]: Loading ~/.dbt/profiles.yml
+09:31:24.725630 [info ]: Loading ~/.dbt/profiles.yml
+09:31:35.328921 [info ]: Loading ~/.dbt/profiles.yml
+09:32:20.124382 [info ]: Loading ~/.dbt/profiles.yml
+09:33:21.193761 [info ]: Loading ~/.dbt/profiles.yml
+09:33:35.176141 [info ]: Loading ~/.dbt/profiles.yml
+09:34:51.101688 [info ]: Loading ~/.dbt/profiles.yml
+09:34:57.518697 [info ]: Loading ~/.dbt/profiles.yml
+09:35:51.777549 [info ]: Loading ~/.dbt/profiles.yml
+09:36:07.338590 [info ]: Loading ~/.dbt/profiles.yml
+09:36:56.045157 [info ]: Loading ~/.dbt/profiles.yml
+09:38:53.516252 [info ]: Loading ~/.dbt/profiles.yml
+09:39:26.615605 [info ]: Loading ~/.dbt/profiles.yml
+09:39:43.715527 [info ]: Loading ~/.dbt/profiles.yml
+09:41:56.502285 [info ]: Loading ~/.dbt/profiles.yml
+09:42:39.176641 [debug]: Ignoring unsupported LSP notification
+09:44:15.146324 [debug]: Ignoring unsupported LSP notification
+09:44:16.129559 [debug]: Ignoring unsupported LSP notification
+09:47:14.585093 [info ]: Loading ~/.dbt/profiles.yml
+09:49:57.769002 [info ]: Loading ~/.dbt/profiles.yml
+09:50:16.059582 [info ]: Loading ~/.dbt/profiles.yml
+09:50:27.011353 [info ]: Loading ~/.dbt/profiles.yml
+09:50:28.066762 [info ]: Loading ~/.dbt/profiles.yml
+09:51:28.133916 [info ]: Loading ~/.dbt/profiles.yml
+09:51:29.258912 [info ]: Loading ~/.dbt/profiles.yml
+09:52:30.337148 [debug]: Ignoring unsupported LSP notification
+09:52:31.423514 [debug]: Ignoring unsupported LSP notification
+09:53:17.290824 [info ]: Loading ~/.dbt/profiles.yml
+09:56:18.467908 [info ]: Loading ~/.dbt/profiles.yml
+09:59:19.796163 [info ]: Loading ~/.dbt/profiles.yml
+10:00:00.346814 [info ]: Loading ~/.dbt/profiles.yml
+10:00:02.054119 [info ]: Loading ~/.dbt/profiles.yml
+10:00:05.257758 [info ]: Loading ~/.dbt/profiles.yml
+10:00:07.787814 [info ]: Loading ~/.dbt/profiles.yml
+10:00:09.547570 [info ]: Loading ~/.dbt/profiles.yml
+10:01:44.913803 [info ]: Loading ~/.dbt/profiles.yml
+10:03:19.928894 [info ]: Loading ~/.dbt/profiles.yml
+10:04:22.015990 [info ]: Loading ~/.dbt/profiles.yml
+10:04:25.788812 [info ]: Loading ~/.dbt/profiles.yml
+10:04:31.286128 [info ]: Loading ~/.dbt/profiles.yml
+10:04:41.235001 [info ]: Loading ~/.dbt/profiles.yml
+10:04:51.144648 [info ]: Loading ~/.dbt/profiles.yml
+10:04:58.511804 [info ]: Loading ~/.dbt/profiles.yml
+10:06:21.397653 [info ]: Loading ~/.dbt/profiles.yml
+10:06:42.792298 [info ]: Loading ~/.dbt/profiles.yml
+10:09:00.611409 [info ]: Loading ~/.dbt/profiles.yml
+10:09:23.177281 [info ]: Loading ~/.dbt/profiles.yml
+10:11:31.210884 [info ]: Loading ~/.dbt/profiles.yml
+10:12:24.437970 [info ]: Loading ~/.dbt/profiles.yml
+10:14:40.377996 [info ]: Loading ~/.dbt/profiles.yml
+10:15:25.629338 [info ]: Loading ~/.dbt/profiles.yml
+10:15:47.408690 [info ]: Loading ~/.dbt/profiles.yml
+10:16:09.261399 [info ]: Loading ~/.dbt/profiles.yml
+10:16:35.861975 [info ]: Loading ~/.dbt/profiles.yml
+10:16:43.648943 [info ]: Loading ~/.dbt/profiles.yml
+10:17:15.763491 [info ]: Loading ~/.dbt/profiles.yml
+10:18:27.058287 [info ]: Loading ~/.dbt/profiles.yml
+10:18:28.203978 [info ]: Loading ~/.dbt/profiles.yml
+10:18:48.453516 [info ]: Loading ~/.dbt/profiles.yml
+10:19:06.424084 [info ]: Loading ~/.dbt/profiles.yml
+10:19:12.980433 [info ]: Loading ~/.dbt/profiles.yml
+10:20:31.507787 [info ]: Loading ~/.dbt/profiles.yml
+10:21:28.287352 [info ]: Loading ~/.dbt/profiles.yml
+10:22:02.752746 [info ]: Loading ~/.dbt/profiles.yml
+10:22:21.778274 [info ]: Loading ~/.dbt/profiles.yml
+10:22:51.829842 [info ]: Loading ~/.dbt/profiles.yml
+10:22:56.709046 [info ]: Loading ~/.dbt/profiles.yml
+10:24:29.526354 [info ]: Loading ~/.dbt/profiles.yml

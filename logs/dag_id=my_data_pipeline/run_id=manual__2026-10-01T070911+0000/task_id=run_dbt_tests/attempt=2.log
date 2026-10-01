@@ -1,0 +1,113 @@
+[2026-10-01T07:23:09.611+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-01T07:23:09.631+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_data_pipeline.run_dbt_tests manual__2026-10-01T07:09:11+00:00 [queued]>
+[2026-10-01T07:23:09.641+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_data_pipeline.run_dbt_tests manual__2026-10-01T07:09:11+00:00 [queued]>
+[2026-10-01T07:23:09.642+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2026-10-01T07:23:09.653+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): run_dbt_tests> on 2026-10-01 07:09:11+00:00
+[2026-10-01T07:23:09.658+0000] {standard_task_runner.py:72} INFO - Started process 691 to run task
+[2026-10-01T07:23:09.661+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'my_data_pipeline', 'run_dbt_tests', 'manual__2026-10-01T07:09:11+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/dbt_pipeline.py', '--cfg-path', '/tmp/tmp6ffhld08']
+[2026-10-01T07:23:09.664+0000] {standard_task_runner.py:105} INFO - Job 16: Subtask run_dbt_tests
+[2026-10-01T07:23:09.719+0000] {task_command.py:467} INFO - Running <TaskInstance: my_data_pipeline.run_dbt_tests manual__2026-10-01T07:09:11+00:00 [running]> on host e946b1b4274d
+[2026-10-01T07:23:09.803+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_data_pipeline' AIRFLOW_CTX_TASK_ID='run_dbt_tests' AIRFLOW_CTX_EXECUTION_DATE='2026-10-01T07:09:11+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-01T07:09:11+00:00'
+[2026-10-01T07:23:09.805+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-10-01T07:23:09.820+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-10-01T07:23:09.822+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd "/opt/***/my_data_pipeline" && dbt test --profiles-dir "/opt/***/my_data_pipeline"']
+[2026-10-01T07:23:09.832+0000] {subprocess.py:99} INFO - Output:
+[2026-10-01T07:23:11.778+0000] {subprocess.py:106} INFO - [0m07:23:11  Running with dbt=1.7.19
+[2026-10-01T07:23:11.960+0000] {subprocess.py:106} INFO - [0m07:23:11  Registered adapter: postgres=1.7.19
+[2026-10-01T07:23:12.443+0000] {subprocess.py:106} INFO - [0m07:23:12  Found 14 models, 5 tests, 2 seeds, 0 sources, 0 exposures, 0 metrics, 402 macros, 0 groups, 0 semantic models
+[2026-10-01T07:23:12.448+0000] {subprocess.py:106} INFO - [0m07:23:12
+[2026-10-01T07:23:12.696+0000] {subprocess.py:106} INFO - [0m07:23:12  Concurrency: 4 threads (target='dev')
+[2026-10-01T07:23:12.698+0000] {subprocess.py:106} INFO - [0m07:23:12
+[2026-10-01T07:23:12.710+0000] {subprocess.py:106} INFO - [0m07:23:12  1 of 5 START test fact_leads_boolean_flags ..................................... [RUN]
+[2026-10-01T07:23:12.712+0000] {subprocess.py:106} INFO - [0m07:23:12  2 of 5 START test fact_leads_campaign_none ..................................... [RUN]
+[2026-10-01T07:23:12.714+0000] {subprocess.py:106} INFO - [0m07:23:12  3 of 5 START test fact_leads_ids ............................................... [RUN]
+[2026-10-01T07:23:12.716+0000] {subprocess.py:106} INFO - [0m07:23:12  4 of 5 START test fact_sales_ids ............................................... [RUN]
+[2026-10-01T07:23:12.948+0000] {subprocess.py:106} INFO - [0m07:23:12  1 of 5 PASS fact_leads_boolean_flags ........................................... [[32mPASS[0m in 0.23s]
+[2026-10-01T07:23:12.955+0000] {subprocess.py:106} INFO - [0m07:23:12  5 of 5 START test leads_updated_at_after_created_at ............................ [RUN]
+[2026-10-01T07:23:12.975+0000] {subprocess.py:106} INFO - [0m07:23:12  4 of 5 PASS fact_sales_ids ..................................................... [[32mPASS[0m in 0.25s]
+[2026-10-01T07:23:12.999+0000] {subprocess.py:106} INFO - [0m07:23:12  2 of 5 PASS fact_leads_campaign_none ........................................... [[32mPASS[0m in 0.28s]
+[2026-10-01T07:23:13.057+0000] {subprocess.py:106} INFO - [0m07:23:13  3 of 5 PASS fact_leads_ids ..................................................... [[32mPASS[0m in 0.33s]
+[2026-10-01T07:23:13.084+0000] {subprocess.py:106} INFO - [0m07:23:13  5 of 5 FAIL 1 leads_updated_at_after_created_at ................................ [[31mFAIL 1[0m in 0.13s]
+[2026-10-01T07:23:13.162+0000] {subprocess.py:106} INFO - [0m07:23:13
+[2026-10-01T07:23:13.163+0000] {subprocess.py:106} INFO - [0m07:23:13  Finished running 5 tests in 0 hours 0 minutes and 0.71 seconds (0.71s).
+[2026-10-01T07:23:13.191+0000] {subprocess.py:106} INFO - [0m07:23:13
+[2026-10-01T07:23:13.193+0000] {subprocess.py:106} INFO - [0m07:23:13  [31mCompleted with 1 error and 0 warnings:[0m
+[2026-10-01T07:23:13.195+0000] {subprocess.py:106} INFO - [0m07:23:13
+[2026-10-01T07:23:13.196+0000] {subprocess.py:106} INFO - [0m07:23:13  [31mFailure in test leads_updated_at_after_created_at (tests/leads_updated_at_after_created_at.sql)[0m
+[2026-10-01T07:23:13.198+0000] {subprocess.py:106} INFO - [0m07:23:13    Got 1 result, configured to fail if != 0
+[2026-10-01T07:23:13.200+0000] {subprocess.py:106} INFO - [0m07:23:13
+[2026-10-01T07:23:13.201+0000] {subprocess.py:106} INFO - [0m07:23:13    compiled Code at target/compiled/my_data_pipeline/tests/leads_updated_at_after_created_at.sql
+[2026-10-01T07:23:13.202+0000] {subprocess.py:106} INFO - [0m07:23:13
+[2026-10-01T07:23:13.204+0000] {subprocess.py:106} INFO - [0m07:23:13  Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[2026-10-01T07:23:14.461+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2026-10-01T07:23:14.475+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-10-01T07:23:14.481+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=my_data_pipeline, task_id=run_dbt_tests, run_id=manual__2026-10-01T07:09:11+00:00, execution_date=20261001T070911, start_date=20261001T072309, end_date=20261001T072314
+[2026-10-01T07:23:14.520+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-10-01T07:23:14.522+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 16 for task run_dbt_tests (Bash command failed. The command returned a non-zero exit code 1.; 691)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-10-01T07:23:14.547+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2026-10-01T07:23:14.567+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-01T07:23:14.570+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

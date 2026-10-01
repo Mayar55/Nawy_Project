@@ -1,0 +1,52 @@
+[2026-10-01T07:29:23.398+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-01T07:29:23.431+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_data_pipeline.run_transformed_data manual__2026-10-01T07:24:07+00:00 [queued]>
+[2026-10-01T07:29:23.448+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_data_pipeline.run_transformed_data manual__2026-10-01T07:24:07+00:00 [queued]>
+[2026-10-01T07:29:23.451+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2026-10-01T07:29:23.474+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): run_transformed_data> on 2026-10-01 07:24:07+00:00
+[2026-10-01T07:29:23.481+0000] {standard_task_runner.py:72} INFO - Started process 887 to run task
+[2026-10-01T07:29:23.485+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'my_data_pipeline', 'run_transformed_data', 'manual__2026-10-01T07:24:07+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/dbt_pipeline.py', '--cfg-path', '/tmp/tmppe_f6904']
+[2026-10-01T07:29:23.491+0000] {standard_task_runner.py:105} INFO - Job 23: Subtask run_transformed_data
+[2026-10-01T07:29:23.587+0000] {task_command.py:467} INFO - Running <TaskInstance: my_data_pipeline.run_transformed_data manual__2026-10-01T07:24:07+00:00 [running]> on host e946b1b4274d
+[2026-10-01T07:29:23.720+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_data_pipeline' AIRFLOW_CTX_TASK_ID='run_transformed_data' AIRFLOW_CTX_EXECUTION_DATE='2026-10-01T07:24:07+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-01T07:24:07+00:00'
+[2026-10-01T07:29:23.723+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-10-01T07:29:23.750+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2026-10-01T07:29:23.753+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd "/opt/***/my_data_pipeline" && dbt run --select path:models/transformed_data --profiles-dir "/opt/***/my_data_pipeline"']
+[2026-10-01T07:29:23.767+0000] {subprocess.py:99} INFO - Output:
+[2026-10-01T07:29:26.824+0000] {subprocess.py:106} INFO - [0m07:29:26  Running with dbt=1.7.19
+[2026-10-01T07:29:27.083+0000] {subprocess.py:106} INFO - [0m07:29:27  Registered adapter: postgres=1.7.19
+[2026-10-01T07:29:27.903+0000] {subprocess.py:106} INFO - [0m07:29:27  Found 14 models, 5 tests, 2 seeds, 0 sources, 0 exposures, 0 metrics, 402 macros, 0 groups, 0 semantic models
+[2026-10-01T07:29:27.917+0000] {subprocess.py:106} INFO - [0m07:29:27
+[2026-10-01T07:29:28.350+0000] {subprocess.py:106} INFO - [0m07:29:28  Concurrency: 4 threads (target='dev')
+[2026-10-01T07:29:28.352+0000] {subprocess.py:106} INFO - [0m07:29:28
+[2026-10-01T07:29:28.370+0000] {subprocess.py:106} INFO - [0m07:29:28  1 of 10 START sql table model dwh.dim_campaign ................................. [RUN]
+[2026-10-01T07:29:28.373+0000] {subprocess.py:106} INFO - [0m07:29:28  2 of 10 START sql table model dwh.dim_contact_method ........................... [RUN]
+[2026-10-01T07:29:28.376+0000] {subprocess.py:106} INFO - [0m07:29:28  3 of 10 START sql table model dwh.dim_date ..................................... [RUN]
+[2026-10-01T07:29:28.380+0000] {subprocess.py:106} INFO - [0m07:29:28  4 of 10 START sql table model dwh.dim_lead_source .............................. [RUN]
+[2026-10-01T07:29:29.067+0000] {subprocess.py:106} INFO - [0m07:29:29  4 of 10 OK created sql table model dwh.dim_lead_source ......................... [[32mSELECT 95[0m in 0.67s]
+[2026-10-01T07:29:29.070+0000] {subprocess.py:106} INFO - [0m07:29:29  2 of 10 OK created sql table model dwh.dim_contact_method ...................... [[32mSELECT 77[0m in 0.68s]
+[2026-10-01T07:29:29.081+0000] {subprocess.py:106} INFO - [0m07:29:29  5 of 10 START sql table model dwh.dim_lead_type ................................ [RUN]
+[2026-10-01T07:29:29.083+0000] {subprocess.py:106} INFO - [0m07:29:29  6 of 10 START sql table model dwh.dim_location ................................. [RUN]
+[2026-10-01T07:29:29.462+0000] {subprocess.py:106} INFO - [0m07:29:29  3 of 10 OK created sql table model dwh.dim_date ................................ [[32mSELECT 2354[0m in 1.06s]
+[2026-10-01T07:29:29.482+0000] {subprocess.py:106} INFO - [0m07:29:29  7 of 10 START sql table model dwh.dim_property_type ............................ [RUN]
+[2026-10-01T07:29:29.515+0000] {subprocess.py:106} INFO - [0m07:29:29  6 of 10 OK created sql table model dwh.dim_location ............................ [[32mSELECT 313[0m in 0.41s]
+[2026-10-01T07:29:29.543+0000] {subprocess.py:106} INFO - [0m07:29:29  8 of 10 START sql table model dwh.dim_sale_category ............................ [RUN]
+[2026-10-01T07:29:29.579+0000] {subprocess.py:106} INFO - [0m07:29:29  1 of 10 OK created sql table model dwh.dim_campaign ............................ [[32mSELECT 1437[0m in 1.18s]
+[2026-10-01T07:29:29.664+0000] {subprocess.py:106} INFO - [0m07:29:29  5 of 10 OK created sql table model dwh.dim_lead_type ........................... [[32mSELECT 10[0m in 0.58s]
+[2026-10-01T07:29:29.839+0000] {subprocess.py:106} INFO - [0m07:29:29  7 of 10 OK created sql table model dwh.dim_property_type ....................... [[32mSELECT 14[0m in 0.34s]
+[2026-10-01T07:29:29.887+0000] {subprocess.py:106} INFO - [0m07:29:29  8 of 10 OK created sql table model dwh.dim_sale_category ....................... [[32mSELECT 6[0m in 0.33s]
+[2026-10-01T07:29:29.895+0000] {subprocess.py:106} INFO - [0m07:29:29  9 of 10 START sql table model dwh.fact_sales ................................... [RUN]
+[2026-10-01T07:29:30.580+0000] {subprocess.py:106} INFO - [0m07:29:30  9 of 10 OK created sql table model dwh.fact_sales .............................. [[32mSELECT 1567[0m in 0.68s]
+[2026-10-01T07:29:30.591+0000] {subprocess.py:106} INFO - [0m07:29:30  10 of 10 START sql table model dwh.fact_leads .................................. [RUN]
+[2026-10-01T07:29:48.045+0000] {subprocess.py:106} INFO - [0m07:29:48  10 of 10 OK created sql table model dwh.fact_leads ............................. [[32mSELECT 55845[0m in 17.45s]
+[2026-10-01T07:29:48.163+0000] {subprocess.py:106} INFO - [0m07:29:48
+[2026-10-01T07:29:48.166+0000] {subprocess.py:106} INFO - [0m07:29:48  Finished running 10 table models in 0 hours 0 minutes and 20.24 seconds (20.24s).
+[2026-10-01T07:29:48.213+0000] {subprocess.py:106} INFO - [0m07:29:48
+[2026-10-01T07:29:48.215+0000] {subprocess.py:106} INFO - [0m07:29:48  [32mCompleted successfully[0m
+[2026-10-01T07:29:48.218+0000] {subprocess.py:106} INFO - [0m07:29:48
+[2026-10-01T07:29:48.220+0000] {subprocess.py:106} INFO - [0m07:29:48  Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[2026-10-01T07:29:49.323+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-10-01T07:29:49.358+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-10-01T07:29:49.361+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=my_data_pipeline, task_id=run_transformed_data, run_id=manual__2026-10-01T07:24:07+00:00, execution_date=20261001T072407, start_date=20261001T072923, end_date=20261001T072949
+[2026-10-01T07:29:49.409+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-01T07:29:49.435+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-01T07:29:49.439+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
